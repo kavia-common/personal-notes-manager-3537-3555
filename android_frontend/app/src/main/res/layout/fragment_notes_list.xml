@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Simple top bar with background -->
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/notes_title"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:textSize="19sp" />
+
+        <!-- Use EditText as search bar -->
+        <EditText
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_hint"
+            android:background="@color/backgroundLight"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/textHint" />
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/backgroundLight" />
+
+        <TextView
+            android:id="@+id/emptyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="40dp"
+            android:text="@string/note_empty"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Simulated Floating Action Button as Button (bottom-right) -->
+    <Button
+        android:id="@+id/fabAddNote"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:text="+"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:translationZ="10dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:contentDescription="@string/add_note"
+        style="?android:attr/borderlessButtonStyle"
+        />
+</FrameLayout>

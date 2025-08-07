@@ -1,0 +1,12 @@
+<resources>
+    <!-- Use a base platform theme always available on Android -->
+    <style name="Theme.NotesMinimal" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:windowBackground">@color/backgroundLight</item>
+    </style>
+
+    <style name="NoteItemText" parent="android:TextAppearance.Medium">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

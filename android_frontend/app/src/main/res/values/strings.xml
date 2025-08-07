@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Minimal Notes</string>
+    <string name="notes_title">My Notes</string>
+    <string name="add_note">Add Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="search_hint">Search notes</string>
+    <string name="note_empty">No notes yet</string>
+    <string name="note_untitled">Untitled</string>
+    <string name="action_back">Back</string>
+</resources>

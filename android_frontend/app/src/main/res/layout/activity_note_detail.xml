@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight"
+    android:orientation="vertical">
+
+    <!-- Simple top bar using TextView -->
+    <TextView
+        android:id="@+id/detailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/edit_note"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/detailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/note_untitled"
+        android:textSize="19sp"
+        android:padding="16dp"
+        android:textColor="@color/textPrimary"
+        android:background="@android:color/transparent"
+        android:maxLines="1"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/detailContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:minHeight="180dp"
+        android:hint="Start writing…"
+        android:textSize="15sp"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/textPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:layout_margin="6dp"
+            android:background="@color/colorSecondary"
+            android:textColor="@color/backgroundLight" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_marginEnd="12dp"
+            android:layout_margin="6dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/backgroundLight" />
+    </LinearLayout>
+</LinearLayout>
